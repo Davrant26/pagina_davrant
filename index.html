@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAVRANT</title>
+    <link rel="icon" type="image/png" href="src/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="/styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="networkCanvas" class="canvas" aria-hidden="true"></canvas>
+    <header class="nav" id="pageNav">
+      <div class="inner">
+        <a href="#" class="logo" aria-label="DAVRANT inicio">
+          <img src="src/logo.png" alt="DAVRANT logo" class="logoImg" />
+          <span>DAVRANT</span>
+        </a>
+        <nav class="links" aria-label="Navegación principal">
+          <a class="link" href="#soluciones">Soluciones</a>
+          <a class="link" href="#casos">Casos</a>
+          <a class="link" href="#nosotros">Nosotros</a>
+        </nav>
+        <div class="actions">
+          <a class="btn primary sm" href="#contacto">Contacto</a>
+        </div>
+        <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="radialCyan" aria-hidden="true"></div>
+        <div class="radialPurple" aria-hidden="true"></div>
+        <div class="inner">
+          <div class="badge">
+            <span class="pill internal"><span class="dot"></span>Automatización · Ciberseguridad</span>
+          </div>
+
+          <h1 class="heading">
+            Automatización inteligente<br />
+            con <span class="accent">seguridad</span> de primer nivel
+            <span class="cursor" aria-hidden="true">_</span>
+          </h1>
+
+          <p class="sub">
+            Construimos sistemas que operan solos y se defienden solos.
+            Desde detección de amenazas hasta flujos autónomos — diseñados
+            para equipos que no pueden permitirse errores.
+          </p>
+
+          <div class="ctas">
+            <a class="btn primary lg" href="#contacto">Contactanos</a>
+            <a class="btn ghost lg" href="#soluciones">Ver soluciones</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><span class="statNum">80%</span><span class="statLabel">Reducción de tiempos operativos</span></div>
+            <div class="stat"><span class="statNum">3x</span><span class="statLabel">Mayor velocidad en reportería</span></div>
+            <div class="stat"><span class="statNum">99.5%</span><span class="statLabel">Confiabilidad en los datos</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="soluciones" class="section" aria-labelledby="soluciones-title">
+        <div class="inner">
+          <div class="header">
+            <span class="eyebrow">Soluciones</span>
+            <h2 id="soluciones-title" class="heading-section">Lo que construimos para ti</h2>
+            <p class="sub-section">
+              Cada solución está diseñada para integrarse con tu stack existente,
+              sin fricción y con visibilidad total.
+            </p>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <span class="icon" aria-hidden="true">🛢️</span>
+              <h3 class="cardTitle">Automatización en procesos de datos (ETL/ELT)</h3>
+              <p class="cardDesc">Diseño e implementación de pipelines de datos automatizados, optimizando procesos y reduciendo hasta un 80% los tiempos operativos.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">SQL</span><span class="tag">dbt</span></div>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">📊</span>
+              <h3 class="cardTitle">Integración de fuentes de datos empresariales</h3>
+              <p class="cardDesc">Integración de fuentes de datos empresariales para consolidación de información en tiempo real, unificación de reportes y centralización de datos, garantizando una única fuente de información confiable para la organización.</p>
+              <div class="tags"><span class="tag">APIS</span><span class="tag">CRM</span><span class="tag">ERP</span><span class="tag">WEBHOOKS</span><span class="tag">SFTP</span><span class="tag">PYTHON</span><span class="tag">MULESOFT</span></div>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">📈</span>
+              <h3 class="cardTitle">Analítica Avanzada y Dashboards Ejecutivos</h3>
+              <p class="cardDesc">Desarrollo de dashboards ejecutivos y reportes automatizados con indicadores clave de negocio en tiempo real, facilitando el análisis de información y la toma de decisiones basada en datos.</p>
+              <div class="tags"><span class="tag">POWER BI</span><span class="tag">LOCKER STUDIO</span><span class="tag">METABASE</span></div>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">☁️</span>
+              <h3 class="cardTitle">Arquitectura de Datos en la Nube (Data Warehouse / DataLake)</h3>
+              <p class="cardDesc">Diseño de arquitecturas de datos escalables en la nube para almacenamiento, procesamiento y análisis de información, optimizando rendimiento, costos y crecimiento tecnológico del negocio.</p>
+              <div class="tags"><span class="tag">GCP</span><span class="tag">Lakehouse</span><span class="tag">BigQuery</span><span class="tag">Redshift</span><span class="tag">Terraform</span></div>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">🤖</span>
+              <h3 class="cardTitle">Inteligencia Artificial Aplicada (RAG, NLP, ML)</h3>
+              <p class="cardDesc">Implementación de soluciones de inteligencia artificial para automatización, búsqueda inteligente de información y modelos predictivos, orientados a optimizar procesos y mejorar la toma de decisiones empresariales.</p>
+              <div class="tags"><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">OpenAI API</span><span class="tag">HuggingFace</span><span class="tag">scikit-learn</span></div>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">🏆</span>
+              <h3 class="cardTitle">Calidad y Gobierno de Datos</h3>
+              <p class="cardDesc">Implementación de estrategias de calidad y gobierno de datos mediante validación, auditoría y control de información, garantizando confiabilidad, trazabilidad y cumplimiento normativo.</p>
+              <div class="tags"><span class="tag">Great Expectations</span><span class="tag">dbt Tests</span><span class="tag">Apache Atlas</span><span class="tag">Python</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros" class="section" aria-labelledby="nosotros-title">
+        <div class="inner">
+          <div>
+            <span class="eyebrow">Nosotros</span>
+            <h2 id="nosotros-title" class="heading">Ingenieros que entienden<br /><span class="accent">el riesgo de primera mano</span></h2>
+            <p class="body">DAVRANT nace de la necesidad de ayudar a las empresas a transformar sus datos en ventajas competitivas, eliminando procesos manuales, silos de información y decisiones basadas en intuición. Somos un equipo especializado en automatización, integración de datos, analítica, inteligencia artificial y optimización tecnológica, enfocado en construir soluciones escalables, eficientes y alineadas con los objetivos estratégicos del negocio.</p>
+            <p class="body">No ofrecemos soluciones genéricas. Diseñamos e implementamos estrategias tecnológicas a la medida, integradas a la operación y necesidades reales de cada empresa, bajo altos estándares de calidad, escalabilidad y eficiencia.</p>
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="contacto" class="section" aria-labelledby="contacto-title">
+        <div class="inner">
+          <div>
+            <span class="eyebrow">Contacto</span>
+            <h2 id="contacto-title" class="heading">¿Listo para empezar?</h2>
+            <p class="sub">Cuéntanos tu desafío. En menos de 24 horas un ingeniero de DAVRANT te responde con un diagnóstico inicial.</p>
+            <div class="channels">
+              <a class="channel" href="mailto:info@davrant.com"><span class="btn email md">✉ info@davrant.com</span></a>
+            </div>
+          </div>
+          <div>
+            <form class="form" onsubmit="event.preventDefault(); alert('Este es un homepage estático. Usa el correo para contactarnos.');">
+              <label class="field"><span class="label">Nombre</span><input class="input" type="text" placeholder="Tu nombre" required /></label>
+              <label class="field"><span class="label">Email</span><input class="input" type="email" placeholder="tu@empresa.com" required /></label>
+              <label class="field"><span class="label">Empresa</span><input class="input" type="text" placeholder="Nombre de tu empresa" /></label>
+              <label class="field"><span class="label">¿Cuál es tu desafío?</span><textarea class="textarea" placeholder="Cuéntanos qué problema estás intentando resolver..." rows="4" required></textarea></label>
+              <button class="btn primary md" type="submit">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="inner">
+        <div class="brand">
+          <a href="#" class="logo" aria-label="DAVRANT inicio"><img src="src/logo.png" alt="DAVRANT logo" class="logoImg" />DAVRANT</a>
+          <p class="tagline">Automatización inteligente con seguridad de primer nivel.</p>
+          <p class="contact"><a href="mailto:info@davrant.com">info@davrant.com</a></p>
+        </div>
+      </div>
+      </footer>
+
+    <script src="main/main.js"></script>
+  </body>
+</html>
